@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es" id="exe-page-mwnrcyax-jqhrfx2b7">
+<head>
+<meta charset="utf-8">
+<meta name="generator" content="eXeLearning v4.0.6">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="exe-pass-score" content="5">
+<link rel="license" type="text/html" href="https://creativecommons.org/licenses/by-sa/4.0/">
+<title>Pantalla LCD1602 | Componentes Electrónicos</title>
+<link rel="icon" type="image/x-icon" href="../libs/favicon.ico">
+<script>document.querySelector("html").classList.add("js");</script><script src="../libs/jquery/jquery.min.js"> </script><script src="../libs/common_i18n.js"> </script><script src="../libs/common.js"> </script><script src="../libs/exe_export.js"> </script><script src="../libs/bootstrap/bootstrap.bundle.min.js"> </script><link rel="stylesheet" href="../libs/bootstrap/bootstrap.min.css">
+<script src="../idevices/text/text.js"></script><link rel="stylesheet" href="../idevices/text/text.css">
+<link rel="stylesheet" href="../content/css/base.css"><script src="../theme/style.js"> </script><link rel="stylesheet" href="../theme/style.css">
+</head>
+<body class="exe-export exe-web-site">
+<script>document.body.className+=" js"</script>
+<div class="exe-content exe-export pre-js siteNav-hidden"><a href="#page-mwnrcyax-jqhrfx2b7" id="skipNav">Skip to content</a> <nav id="siteNav">
+<ul>
+<li class="current-page-parent"> <a href="../index.html" class="main-node daddy">Componentes Electrónicos</a>
+<ul class="other-section">
+<li> <a href="../html/montaje-de-componentes.html" class="no-ch">Montaje de componentes</a>
+</li>
+<li> <a href="../html/circuitos-integrados.html" class="no-ch">Circuitos integrados</a>
+</li>
+<li> <a href="../html/resistencias.html" class="daddy">Resistencias</a>
+<ul class="other-section">
+<li> <a href="../html/ldr.html" class="no-ch">LDR</a>
+</li>
+<li> <a href="../html/ntc.html" class="no-ch">NTC</a>
+</li>
+<li> <a href="../html/ptc.html" class="no-ch">PTC</a>
+</li>
+<li> <a href="../html/vdr.html" class="no-ch">VDR</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/condensadores.html" class="no-ch">Condensadores</a>
+</li>
+<li> <a href="../html/bobinas.html" class="daddy">Bobinas</a>
+<ul class="other-section">
+<li> <a href="../html/transformadores.html" class="no-ch">Transformadores</a>
+</li>
+<li> <a href="../html/rele.html" class="no-ch">Relé</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/pulsadores-e-interruptores.html" class="no-ch">Pulsadores e Interruptores</a>
+</li>
+<li> <a href="../html/leds.html" class="no-ch">Leds</a>
+</li>
+<li> <a href="../html/display-7-segmentos.html" class="no-ch">Display 7 segmentos</a>
+</li>
+<li class="active"> <a href="../html/pantalla-lcd1602.html" class="active no-ch">Pantalla LCD1602</a>
+</li>
+<li> <a href="../html/transistor.html" class="no-ch">Transistor</a>
+</li>
+<li> <a href="../html/drivers.html" class="no-ch">Drivers</a>
+</li>
+<li> <a href="../html/motores.html" class="no-ch">Motores</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/anexo-licencias.html" class="no-ch">Anexo: Licencias</a>
+</li>
+</ul>
+</nav><main id="page-mwnrcyax-jqhrfx2b7" class="page"> 
+<header class="main-header">
+<div class="package-header"><p class="package-title">Componentes Electrónicos</p></div>
+<div class="page-header"><h1 class="page-title">Pantalla LCD1602</h1></div>
+</header><div id="page-content-page-mwnrcyax-jqhrfx2b7" class="page-content">
+<article id="block-mwnrcyay-zsl8hw6yc" class="box">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/udl_rep_lee.svg" alt="" style="display:block;object-fit:contain;">
+</div>
+<h1 class="box-title">Display LCD1602</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-mwnrcyay-wxz466t7g" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;idevice-mwnrcyay-wxz466t7g&quot;}">
+<div class="exe-text-template">
+    <h2>Características Principales</h2>
+<ul>
+<li>Display alfanumérico</li>
+<li>Configuración de 2 filas x 16 columnas</li>
+<li>Pantalla retroiluminada</li>
+<li>Requiere de 7 a 11 pines de conexión<br /></li>
+</ul>
+<h3>adaptador I2C para LCD<img src="../content/resources/mceclip3.jpg" width="373" height="304" style="float: left;" /></h3>
+<p><img src="../content/resources/mceclip4.jpg" width="201" height="131" /></p>
+<ul>
+<li>Conexión simplificada con solo 2 pines (SDA/SCL)</li>
+<li>Módulo independiente (se adquiere por separado)</li>
+<li>Potenciómetro para control de contraste</li>
+<li>Jumpers para ajuste de dirección I2C</li>
+<li>Gestión de retroiluminación vía software<br /></li>
+</ul>
+<h3>biblioteca para I2C LCD1602</h3>
+<p><strong>Función                                  Descripción</strong><br /><strong>LiquidCrystal_I2C(Add,c,r)    </strong>   Crea una instancia de la clase<br /><strong>init()    </strong>                                        Inicializa el display LCD<br /><strong>clear()    </strong>                                     Borra la pantalla y sitúa el cursor en la posición 0,0<br /><strong>setCursor(col, row)        </strong>           Coloca el cursor en la posición col, row<br /><strong>print(text)     </strong>                              Escribe un texto en la posición actual<br /><strong>printf(text)  </strong>                                Imprime texto formateado<br /><strong>scrollDisplayLeft()       </strong>              Desplaza el texto en pantalla a la izquierda<br /><strong>scrollDisplayRight()    </strong>               Desplaza el texto en pantalla a la derecha<br /><strong>backlight() / noBacklight()  </strong>       Activa / desactiva la retroiluminación del display<br /><strong>createChar (dir, datos)   </strong>            Crea un carácter personalizado en la RAM del display<br /></p>
+</div>
+</div>
+</div>
+</article>
+</div></main><div class="nav-buttons">
+<a href="../html/display-7-segmentos.html" title="Anterior" class="nav-button nav-button-left"><span>Anterior</span></a>
+<a href="../html/transistor.html" title="Siguiente" class="nav-button nav-button-right"><span>Siguiente</span></a>
+</div>
+<footer id="siteFooter"><div id="siteFooterContent"> <div id="packageLicense" class="cc cc-by-sa"> <p> <span class="license-label">Licencia: </span><a href="https://creativecommons.org/licenses/by-sa/4.0/" class="license">Creative Commons: Reconocimiento - compartir igual 4.0</a></p>
+</div>
+</div></footer>
+</div>
+<p id="made-with-eXe"> <a href="https://exelearning.net/" target="_blank" rel="noopener"> <span>Creado con eXeLearning <span>(Ventana nueva)</span></span></a></p>
+</body>
+</html>
